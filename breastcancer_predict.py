@@ -44,7 +44,7 @@ class Score:
 if __name__ == "__main__":
     score = Score()
     score.load()
-    data=(os.path.join(os.environ['DATA_PATH'],'test.csv'))
+    data=(os.path.join(os.environ['DATA_PATH'],'input.csv'))
    #  data=(os.path.join(os.getcwd(),'test.csv'))
     df=pd.read_csv(data)
     df=df.drop(['Unnamed: 0'],axis=1)
